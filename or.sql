@@ -1,0 +1,13 @@
+create database NOIDA;
+USE NOIDA;
+create table customers(customer_id INT PRIMARY KEY, customer_name varchar(225), contact_name varchar(225), address varchar(225), city varchar(225), postcode varchar(225), country varchar(225)); 
+insert into customers values(1, 'Alfreds Futterkiste', 'Maria Anders', 'object str.57', 'Berline', '12209', 'Germany');
+insert into customers values(2, 'Ana Trujillo Emparedados y hela dos', 'Ana Trujillo', 'Avda. de la constitucion', 'Mexico D.F', '05021', 'Mexico');
+insert into customers values(3, 'Antonio Moreno', 'Antonio Moreno', 'Mataderos 2312', 'mexico D.F', '05023', 'Mexico');
+insert into customers values(4, 'Around the Horn', 'Thomas Hardy', '120 Hanover sql', 'Lndon', 'WA1 1DP', 'UK');
+insert into customers values(5, 'Belglunds snabbkop', 'Christina Berglund', 'Berguvsvagen 8', 'Lulea', 'S-958 22', 'Sweden');
+select * from customers;
+select * from customers where country = 'Germany' oR country =' Spain';
+select * from customers where city = 'Berlin' OR customer_name LiKe  'G%' OR country = 'NorWay';
+SELECT * from customers WHERE country = 'Spain' AND (customer_name LIKE 'G % ' OR customer_name LIKE 'R%');
+select * from customers where country = 'Spain' AND  customer_Name LIKE 'G%' OR customer_Name LIKE 'R%';
