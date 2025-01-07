@@ -9,5 +9,7 @@ insert into supplier  values(5, 'Muyuml', 'Mayumi Ohno', '92 Setsuko Chuo-ku', '
 insert into supplier values(6, 'pavlova, Ltd.', 'Ian Devling', '74 Rose st. Moonie Ponds','Melbourne', '3058', 'Australla', '4040602070');
 select * from supplier;
 delete from supplier where supplier_id =  1;
+/*delete all record */
 delete from supplier;
+/* delete table */
 drop table supplier;
