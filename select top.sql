@@ -12,3 +12,12 @@ create table customers10(customer_id INT primary key, customer_name varchar(255)
  
  /* LIMIT */
  SELECT   * FROM customers10 LIMIT 3;
+ 
+ /* ADD a WHERE CLAUSE */
+ select * from customers10 where country = 'Mexcio' limit 3;
+ 
+ /* Add the Order by Keyword */
+ select * from customers10 order by  customer_name desc LIMIT 3;
+ 
+ 
+ 
