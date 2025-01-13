@@ -12,3 +12,4 @@ FROM (
     FROM employees
 ) ranked
 WHERE rnk = 2;
+
