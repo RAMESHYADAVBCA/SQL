@@ -10,4 +10,5 @@ select avg(price) AS averageprice From products;
 select * from Products Where price > (SELECT AVG(price) FROM products);
 
 /* use AVG() with GROUP BY */
-select AVG(price) AS 
+select AVG(price) AS AveragePrice, Category_id from products GROUP BY Category_id;
+select AVG(price) AS AveragePrice, Category_id from products GROUP BY Category_id;
