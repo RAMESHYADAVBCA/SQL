@@ -1,12 +1,11 @@
-create database PRODUCTS;
-use PRODUCTS;
+use demo;
 create table products(product_id INT PRIMARY KEY, product_Name varchar(225), supplier_id INT , category_id INT, Unit varchar(225), price int);
 insert into products values(1, 'chais', 1, 1, '10 boxes * 20 bags', 18);
 insert into products values(35, 'Steeleye Stout', 16, 1, '24 - 12 oz bottles', 18);
 insert into products values(39, 'chartreuse verte', 18, 1, '750 cc per bottle', 18);
 insert into products values(76, 'LakkaliKoori', 23, 1, '500 ml', 18);
 update products SET supplier_id =23 where product_id = 76;
-select * from products;
+select * from products; 
 select * from products WHERE price = 18;
 insert into products values(27, 'schoggi schokolade', 11, 3, '100 - 100 g prices', 45.6);
 insert into products values(32, 'Mascarpone Fabioli', 14, 4, '24- 200 g paks', 32);
